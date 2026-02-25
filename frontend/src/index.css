@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer base {
+  .dark {
+    color-scheme: dark;
+  }
+
+  /* Force le fond et le texte global quand la classe .dark est active */
+  html.dark body {
+    background-color: #020617; /* Slate-950 */
+    color: #f8fafc;            /* Slate-50 */
+  }
+}
